@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Guide Interactif de l'IA pour Débutants</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Guide Interactif de l'IA pour Débutants</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="lessons/lesson1.html">Leçon 1 : Introduction à l'IA</a></li>
+                <li><a href="lessons/lesson2.html">Leçon 2 : Apprentissage Automatique</a></li>
+                <!-- Ajoutez plus de leçons ici -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Bienvenue !</h2>
+        <p>Découvrez les bases de l'intelligence artificielle à travers des leçons interactives.</p>
+        <p>Cliquez sur une leçon dans le menu pour commencer.</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Votre Nom ou Entreprise</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

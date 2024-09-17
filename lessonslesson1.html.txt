@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Leçon 1 : Introduction à l'IA</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <h1>Leçon 1 : Introduction à l'Intelligence Artificielle</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="lesson1.html">Leçon 1</a></li>
+                <li><a href="lesson2.html">Leçon 2</a></li>
+                <!-- Ajoutez plus de leçons ici -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Qu'est-ce que l'Intelligence Artificielle ?</h2>
+        <p>L'intelligence artificielle (IA) est un domaine de l'informatique qui se concentre sur la création de systèmes capables d'effectuer des tâches qui nécessitent normalement l'intelligence humaine.</p>
+
+        <!-- Exemple interactif -->
+        <button id="show-example-btn">Voir un exemple d'IA</button>
+        <div id="example-content" style="display:none; margin-top:20px;">
+            <p>Les assistants virtuels comme Siri et Alexa sont des exemples courants d'IA.</p>
+        </div>
+
+        <!-- Quiz interactif -->
+        <h3>Quiz</h3>
+        <p>Quel est un exemple d'intelligence artificielle ?</p>
+        <ul>
+            <li><button class="quiz-option" data-correct="false">Un crayon</button></li>
+            <li><button class="quiz-option" data-correct="true">Un assistant virtuel</button></li>
+            <li><button class="quiz-option" data-correct="false">Une table</button></li>
+        </ul>
+        <p id="quiz-feedback"></p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Votre Nom ou Entreprise</p>
+    </footer>
+    <script src="../script.js"></script>
+    <script>
+        // Afficher l'exemple d'IA
+        document.getElementById('show-example-btn').addEventListener('click', function() {
+            var content = document.getElementById('example-content');
+            if(content.style.display === "none") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        });
+
+        // Gérer le quiz
+        var quizOptions = document.querySelectorAll('.quiz-option');
+        var feedback = document.getElementById('quiz-feedback');
+
+        quizOptions.forEach(function(option) {
+            option.addEventListener('click', function() {
+                if(this.getAttribute('data-correct') === 'true') {
+                    feedback.textContent = 'Bonne réponse !';
+                    feedback.style.color = 'green';
+                } else {
+                    feedback.textContent = 'Mauvaise réponse, réessayez.';
+                    feedback.style.color = 'red';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+<script>
+    // Marquer la leçon 1 comme complétée
+    completeLesson(1);
+</script>
+

@@ -1,0 +1,13 @@
+// script.js
+
+// Vous pouvez ajouter des scripts communs à toutes les pages ici
+// Enregistrer la leçon comme complétée
+function completeLesson(lessonNumber) {
+    localStorage.setItem('lesson' + lessonNumber, 'completed');
+}
+
+// Vérifier si la leçon est complétée
+function isLessonCompleted(lessonNumber) {
+    return localStorage.getItem('lesson' + lessonNumber) === 'completed';
+}
+
